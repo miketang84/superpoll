@@ -21,18 +21,18 @@ We have done:
 ## Details
 
 - `superpoll::io`
-	- changed dependancy `futures-lite` to `futures`
+	- changed dependency `futures-lite` to `futures`
 - `superpoll::blocking`
-	- changed dependancy `futures-lite` to `futures`
-	- changed dependancy `async-channel::bounded` to `futures::channel::mpsc::channel`
-	- changed dependancy `atomic-waker::AtomicWaker` to `futures::task::AtomicWaker`
+	- changed dependency `futures-lite` to `futures`
+	- changed dependency `async-channel::bounded` to `futures::channel::mpsc::channel`
+	- changed dependency `atomic-waker::AtomicWaker` to `futures::task::AtomicWaker`
 - `superpoll::net`
-	- changed dependancy `futures-lite` to `futures`
+	- changed dependency `futures-lite` to `futures`
 - `superpoll::fs`
-	- changed dependancy `futures-lite` to `futures`
-	- changed dependancy `async-lock::Mutex` to `futures::lock::Mutex`
+	- changed dependency `futures-lite` to `futures`
+	- changed dependency `async-lock::Mutex` to `futures::lock::Mutex`
 - `superpoll::process`
-	- changed dependancy `futures-lite` to `futures`
+	- changed dependency `futures-lite` to `futures`
 
 ## Not Finished
 
