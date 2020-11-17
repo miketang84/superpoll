@@ -2,7 +2,7 @@
 
 superpoll - A rust async runtime extends futures strictly, rather than rewriting many things.
 
-## Plan
+## Aim
 
 superpoll aims not to do much original works, but integrate and import the best components 
 there are, and expose unified interface.
@@ -18,7 +18,15 @@ We have done:
 - ported stjepang's `async-fs` as `superpoll::fs`
 - ported stjepang's `async-process` as `superpoll::process`
 
-## Details
+## Components
+
+- [superpoll::io](https://github.com/daogangtang/superpoll-io): Timer, Async
+- [superpoll::blocking](https://github.com/daogangtang/superpoll-blocking): Unblock, unblock
+- [superpoll::net](https://github.com/daogangtang/superpoll-net): TcpListner, TcpStream, UdpSocket, UnixSocket and so on...
+- [superpoll::fs](https://github.com/daogangtang/superpoll-fs): standard fs async api
+- [superpoll::process](https://github.com/daogangtang/superpoll-process): POSIX process async api
+
+## Reorgnization Details
 
 - `superpoll::io`
 	- changed dependency `futures-lite` to `futures`

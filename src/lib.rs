@@ -1,3 +1,4 @@
+pub use futures;
 pub use superpoll_io as io;
 pub use superpoll_blocking as blocking;
 pub use superpoll_net as net;

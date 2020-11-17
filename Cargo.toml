@@ -8,8 +8,8 @@ edition = "2018"
 
 [dependencies]
 futures = "0.3.8"
-superpoll-io = {path = "../superpoll-io"}
-superpoll-blocking = {path = "../superpoll-blocking"}
-superpoll-net = {path = "../superpoll-net"}
-superpoll-fs = {path = "../superpoll-fs"}
-superpoll-process = {path = "../superpoll-process"}
+superpoll-io = {git = "https://github.com/daogangtang/superpoll-io"}
+superpoll-blocking = {git = "https://github.com/daogangtang/superpoll-blocking"}
+superpoll-net = {git = "https://github.com/daogangtang/superpoll-net"}
+superpoll-fs = {git = "https://github.com/daogangtang/superpoll-fs"}
+superpoll-process = {git = "https://github.com/daogangtang/superpoll-process"}
