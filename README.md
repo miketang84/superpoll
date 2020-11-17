@@ -7,8 +7,8 @@ superpoll - A rust async runtime extends futures strictly, rather than rewriting
 superpoll aims not to do much original works, but integrate and import the best components 
 there are, and expose unified interface.
 
-The most important focus: we follow `futures` strictly, and will do nothing conflicted with `futures`,
-if there are some function in `futures`, we will use it/them directly, do not rewrite, or overwrite it.
+The most important focus is: we follow `futures` strictly, and will do nothing conflicted with `futures`'s implementation, so, 
+if there are one function in `futures`, we will use it directly, and *NEVER* rewrite/replace it with our own implementation.
 
 We have done:
 
