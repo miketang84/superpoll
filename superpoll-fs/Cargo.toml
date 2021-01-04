@@ -1,0 +1,23 @@
+[package]
+name = "superpoll-fs"
+version = "0.1.0"
+authors = ["Stjepan Glavina <stjepang@gmail.com>", "Daogang Tang <daogangtang@gmail.com>"]
+edition = "2018"
+description = "Async filesystem primitives"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/daogangtang/superpoll-fs"
+homepage = "https://github.com/daogangtang/superpoll-fs"
+documentation = ""
+keywords = ["asynchronous", "file", "filesystem", "io"]
+categories = ["asynchronous", "concurrency"]
+readme = "README.md"
+
+[dependencies]
+superpoll-blocking = {git = "https://github.com/daogangtang/superpoll-blocking"}
+futures = "0.3.8"
+
+[target.'cfg(unix)'.dev-dependencies]
+libc = "0.2.78"
+
+[target.'cfg(windows)'.dev-dependencies]
+winapi = { version = "0.3.9", features = ["winbase"] }

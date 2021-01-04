@@ -1,0 +1,34 @@
+[package]
+name = "superpoll-process"
+version = "0.1.0"
+authors = ["Stjepan Glavina <stjepang@gmail.com>", "Daogang Tang <daogangtang@gmail.com>"]
+edition = "2018"
+description = "Async interface for working with processes"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/daogangtang/superpoll-process"
+homepage = "https://github.com/daogangtang/superpoll-process"
+documentation = ""
+keywords = ["process", "spawn", "command", "subprocess", "child"]
+categories = ["asynchronous", "os"]
+readme = "README.md"
+
+[dependencies]
+cfg-if = "0.1.10"
+event-listener = "2.4.0"
+futures = "0.3.8"
+once_cell = "1.4.1"
+
+[target.'cfg(unix)'.dependencies]
+superpoll-io = {git = "https://github.com/daogangtang/superpoll-io"}
+signal-hook = { version = "0.1.16", default-features = false }
+
+[target.'cfg(windows)'.dependencies]
+superpoll-blocking = {git = "https://github.com/daogangtang/superpoll-blocking"}
+
+[target.'cfg(windows)'.dependencies.winapi]
+version = "0.3.9"
+default-features = false
+features = [
+  "winbase",
+  "winnt",
+]

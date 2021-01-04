@@ -1,0 +1,19 @@
+[package]
+name = "superpoll-blocking"
+version = "0.1.0"
+authors = ["Stjepan Glavina <stjepang@gmail.com>", "Daogang Tang <daogangtang@gmail.com>"]
+edition = "2018"
+description = "A thread pool for isolating blocking I/O in async programs"
+license = "Apache-2.0 OR MIT"
+repository = "https://github.com/daogangtang/superpoll-blocking"
+homepage = "https://github.com/daogangtang/superpoll-blocking"
+documentation = ""
+keywords = ["async", "file", "stdio", "stdin", "process"]
+categories = ["asynchronous", "concurrency"]
+readme = "README.md"
+
+[dependencies]
+async-task = "4.0.2"
+fastrand = "1.3.4"
+futures = "0.3.8"
+once_cell = "1.4.1"
